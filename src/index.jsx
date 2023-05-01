@@ -5,9 +5,8 @@ import "./style/index.css";
 import "./style/style.css";
 import "./style/header.css";
 
-
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <>
+  <React.StrictMode>
     <App />
-  </>
+  </React.StrictMode>
 );
