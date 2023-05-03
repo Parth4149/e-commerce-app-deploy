@@ -83,7 +83,7 @@ function App() {
           setIsDark={setIsDark}
         />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/e-commerce-app-deploy/" element={<Home />} />
           <Route path="/books" element={<Books books={books} />} />
           <Route
             path="/books/:id"
