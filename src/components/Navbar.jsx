@@ -42,7 +42,7 @@ const Navbar = ({ numberOfItems, isDark, setIsDark }) => {
   return (
     <nav>
       <div className="nav__container">
-        <Link to="/">
+        <Link to="/e-commerce-app-deploy/">
           <BookLogo />
         </Link>
         <ul className="nav__links">
