@@ -1,13 +1,18 @@
+import "./style.css";
 import { useState, useEffect } from "react";
-import BookLogo from "../assets/BookLogo";
-import { LightIcon, DarkIcon } from "../assets/Icons";
+import { Link } from "react-router-dom";
+
+import Logo from "../../assets/Logo";
+import { LightIcon, DarkIcon } from "../../assets/Icons";
 import { FaShoppingCart } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { books } from "../../data";
 
-import { Link } from "react-router-dom";
+import Search from "../ui/Search";
 
 const Navbar = ({ numberOfItems, isDark, setIsDark }) => {
+  const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 480px)").matches
@@ -42,9 +47,10 @@ const Navbar = ({ numberOfItems, isDark, setIsDark }) => {
   return (
     <nav>
       <div className="nav__container">
-        <Link to="/e-commerce-app-deploy/">
-          <BookLogo />
+        <Link to="/">
+          <Logo />
         </Link>
+        <Search query={query} setQuery={setQuery} books={books} />
         <ul className="nav__links">
           {!isMobile && (
             <>
@@ -87,7 +93,7 @@ const Navbar = ({ numberOfItems, isDark, setIsDark }) => {
 function Backdrop({ closeMenu }) {
   return (
     <div className="menu__backdrop">
-      <button onClick={closeMenu} className="btn__menu btn__menu--close m-fs">
+      <button onClick={closeMenu} className="btn__menu btn__menu--close fs-m">
         <AiFillCloseCircle />
       </button>
       <ul className="menu__links">

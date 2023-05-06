@@ -1,4 +1,4 @@
-import BookLogo from "../assets/BookLogo";
+import Logo from "../assets/Logo";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -12,14 +12,14 @@ const Footer = () => {
   return (
     <footer id="footer" className="section">
       <div className="row row__column">
-        <Link to="/e-commerce-app-deploy/">
+        <Link to="/">
           {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
           <figure className="footer__logo" onClick={() => scrollToTop()}>
-            <BookLogo />
+            <Logo />
           </figure>
         </Link>
         <div className="footer__list">
-          <Link to="/e-commerce-app-deploy/" className="footer__link" onClick={() => scrollToTop()}>
+          <Link to="/" className="footer__link" onClick={() => scrollToTop()}>
             Home
           </Link>
           <span className="footer__link no-cursor">About</span>
