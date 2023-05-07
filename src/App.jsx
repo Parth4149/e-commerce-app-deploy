@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from "./components";
 import { Home, Books, BookInfo, Cart } from "./pages";
 import { books } from "./data";
+import "./style/index.css";
+import "./style/style.css";
 
 import {
   getThemeFromLocalStorage,
