@@ -47,7 +47,7 @@ const Navbar = ({ numberOfItems, isDark, setIsDark }) => {
   return (
     <nav>
       <div className="nav__container">
-        <Link to="/">
+        <Link to="/e-commerce-app-deploy/">
           <Logo />
         </Link>
         <Search query={query} setQuery={setQuery} books={books} />
@@ -55,7 +55,7 @@ const Navbar = ({ numberOfItems, isDark, setIsDark }) => {
           {!isMobile && (
             <>
               <li className="nav__list">
-                <Link to="/" className="nav__link">
+                <Link to="/e-commerce-app-deploy/" className="nav__link">
                   Home
                 </Link>
               </li>
@@ -98,7 +98,7 @@ function Backdrop({ closeMenu }) {
       </button>
       <ul className="menu__links">
         <li className="menu__list">
-          <Link to="/" className="menu__link" onClick={closeMenu}>
+          <Link to="/e-commerce-app-deploy/" className="menu__link" onClick={closeMenu}>
             Home
           </Link>
         </li>
