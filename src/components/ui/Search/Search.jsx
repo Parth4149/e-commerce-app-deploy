@@ -1,4 +1,4 @@
-// import "./style.css";
+import "./style.css";
 import { Link, useNavigate } from "react-router-dom";
 import SearchIcon from "../../../assets/SearchIcon";
 
@@ -22,8 +22,8 @@ const Search = ({ query, setQuery, books }) => {
 
   return (
     <div className="search__container">
-      <SearchIcon />
       <form onSubmit={handleSubmit}>
+        <SearchIcon />
         <input
           type="text"
           autoComplete="off"
