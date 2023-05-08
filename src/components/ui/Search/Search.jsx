@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 import { Link, useNavigate } from "react-router-dom";
 import SearchIcon from "../../../assets/SearchIcon";
 
