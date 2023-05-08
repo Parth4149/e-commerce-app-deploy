@@ -1,6 +1,6 @@
+import "./style.css";
 import { Link, useNavigate } from "react-router-dom";
-
-import SearchIcon from "../../assets/SearchIcon";
+import SearchIcon from "../../../assets/SearchIcon";
 
 const Search = ({ query, setQuery, books }) => {
   const navigate = useNavigate();
